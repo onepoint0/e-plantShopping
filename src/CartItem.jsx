@@ -9,7 +9,6 @@ const CartItem = ({ onContinueShopping, removeAddedToCart }) => {
 
   const calculateTotalAmount = () => {
     return cart.reduce((sum,item) => sum + (item.cost * item.quantity),0)
-
   };
 
   const handleContinueShopping = (e) => {
